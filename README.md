@@ -13,6 +13,8 @@ As a user you can see the list of available kegs and for each keg you can see it
 
 Clone the repository and `cd` into your directory:
 ```
+$ npm install typescript -g
+$ apm install atom-typescript 
 $ npm install
 $ bower install
 $ gulp build
