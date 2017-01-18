@@ -39,6 +39,8 @@ li {
   text-align: center;
 }
 
-.left {
-  float: left !important;
+.pic {
+  margin: 0 auto;
+  width: 85%;
+  height: 550px;
 }
