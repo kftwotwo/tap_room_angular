@@ -6,6 +6,7 @@ body {
   background-image: url('https://s-media-cache-ak0.pinimg.com/originals/ef/28/65/ef286539b2537c1605a9c215ac28a4a0.jpg');
   background-repeat:round !important;
 }
+
 i {
   color: skyblue;
 }
@@ -26,4 +27,18 @@ li {
 
 .center {
   text-align: center;
+}
+
+.center-form {
+  margin: auto;
+    width: 50%;
+}
+
+.button-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.left {
+  float: left !important;
 }
