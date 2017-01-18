@@ -6,8 +6,15 @@ import { Component } from '@angular/core';
   <div class="well">
     <h1 class="center">Here are all the taps</h1>
     <ul>
-     <li class="center" *ngFor="let currentKeg of kegs"><p><span class="som">{{currentKeg.nameDrink}}</span> {{currentKeg.price}} <br> Alcohol Content: {{currentKeg.alcoholContent}} <br>Pints: {{currentKeg.pints}}</p><hr></li>
+     <li class="center" *ngFor="let currentKeg of kegs"><p><span class="som">{{currentKeg.nameDrink}}</span><br> Price: {{currentKeg.price}} <br> Alcohol Content: {{currentKeg.alcoholContent}} <br>Pints: {{currentKeg.pints}}</p><button class="center btn btn-warning" (click)="editKeg(currentKeg)">Edit</button><hr></li>
    </ul>
+     <div *ngIf="selectedKeg">
+        <h3>Edit</h3>
+        <label>Enter Task Description:</label>
+        <input [(ngModel)]="selectedKeg.nameDrink">
+        <br>
+        <button (click)="finishedEditing()">Save</button>
+      </div>
    </div>
   `
 })
@@ -18,6 +25,16 @@ kegs: Keg[] = [
     new Keg("Colt 45", "$100", "IDK", "Beer", "120 pints"),
     new Keg("Budlight", "$200", "budwiser", "Beer", "100 pints")
   ];
+
+  selectedKeg = null;
+
+  editKeg(clickedKeg) {
+    this.selectedKeg = clickedKeg;
+  }
+
+  finishedEditing() {
+    this.selectedKeg = null;
+  }
 }
 
 export class Keg {
