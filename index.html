@@ -9,17 +9,24 @@
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script type="text/javascript" src="app/keg.js">
-
-    </script>
+    <script type="text/javascript" src="app/keg.js"></script>
     <script src="systemjs.config.js"></script>
-    <script>
-      System.import('app').catch(function(err){ console.error(err); });
-    </script>
+    <link rel="stylesheet" href="style/master.css">
+    <script>System.import('app').catch(function(err){ console.error(err); });</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
   </head>
   <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <i class="fa fa-beer" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
     <div class="container">
-      <app-root></app-root>
+      <all-kegs></all-kegs>
     </div>
   </body>
 </html>

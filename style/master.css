@@ -1,0 +1,28 @@
+nav {
+    background-color: inherit;
+}
+
+body {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/ef/28/65/ef286539b2537c1605a9c215ac28a4a0.jpg');
+  background-repeat:round !important;
+}
+i {
+  color: skyblue;
+}
+
+.well {
+  background-image: url('http://www.pixeden.com/media/k2/galleries/165/003-subtle-light-pattern-background-texture-vol5.jpg');
+}
+
+li {
+  list-style-type: none;
+}
+
+.som {
+  font-weight: bolder;
+  color: goldenrod;
+}
+
+.center {
+  text-align: center;
+}

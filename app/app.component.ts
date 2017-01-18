@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'all-kegs',
   template: `
-    <h1>Here are all the taps</h1>
+  <div class="well">
+    <h1 class="center">Here are all the taps</h1>
     <ul>
-     <li *ngFor="let currentKeg of kegs">{{currentKeg.nameDrink}} - {{currentKeg.price}} {{currentKeg.alcoholContent}} {{currentKeg.pints}}</li>
+     <li class="center" *ngFor="let currentKeg of kegs"><p><span class="som">{{currentKeg.nameDrink}}</span> {{currentKeg.price}} <br> Alcohol Content: {{currentKeg.alcoholContent}} <br>Pints: {{currentKeg.pints}}</p><hr></li>
    </ul>
+   </div>
   `
 })
 
