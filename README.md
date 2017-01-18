@@ -1,12 +1,13 @@
-# Angular-Template
+# Tap-Room
 
- This is a template for angular 2, 1/16/2017
+***NOTE I'M STILL UNDER AGE AND THIS IS JUST ASSIGNMENT FROM EPICODUS***
+, 1/18/2017
 
  By [Kevin Finley](http://www.kfinley.com)
 
 ## Description
 
-This is a template for angular 2 for epicodus!
+As a user you can see the list of available kegs and for each keg you can see it's name, brand, price, alcohol content, and how many pints are left. Able to edit those if needed!
 
 ## Setup/Installation Requirements
 
