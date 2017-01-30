@@ -14,7 +14,7 @@ As a user you can see the list of available kegs and for each keg you can see it
 Clone the repository and `cd` into your directory:
 ```
 $ npm install typescript -g
-$ apm install atom-typescript 
+$ apm install atom-typescript (only if you are using atom)
 $ npm install
 $ bower install
 $ gulp build
@@ -22,7 +22,20 @@ $ gulp serve
 ```
 
 ## Contact details
-Here is my email kf.two.two@gmail.com
+If you need to contact me my email is `kftwotow@gmail.com`
+
+## Contribute
+
+If you wish to contribute create an issue and describe your idea then fork it and submit a pull request!
+
+
+## Technologies Used
+```
+HTML
+CSS
+Typescript
+Angular-2
+```
 
 ### License
 
